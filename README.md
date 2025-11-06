@@ -24,11 +24,11 @@ python experiments/01_cmcqrd_create_pairs.py
 
 data/
 
-   jee/
-   - jee.parquet 
-   - jee_pairs.parquet
+   >jee/
+   >- jee.parquet 
+   >- jee_pairs.parquet
 
-   cmcqrd/
+   >cmcqrd/
    - cmcqrd.parquet 
    - cmcqrd_pairs.parquet
   
