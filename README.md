@@ -9,10 +9,10 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 
-python experiments/cmcqrd.py
+python experiments/01_cmcqrd_create_pairs.py
 ```
-## Overview of the data
 
+## Overview of the data
 1. The original three datasets used in the paper are available at
    - JEE Advanced Maths 2024 (https://jeeadv.ac.in/archive.html) --> save as jee/data/jee.parquet
    - The Cambridge MCQ Reading Dataset by Mullooly et al. 2023 (https://englishlanguageitutoring.com/datasets/cambridge-multiple-choice-questions-reading-dataset) --> save as cmcqrd/data/cmcqrd.parquet
@@ -22,39 +22,41 @@ python experiments/cmcqrd.py
   
 3. All data necessary to replicate the experiments is available at (10.5281/zenodo.17523641)
 
-**jee**
+**data/**
 
-*data*
+*jee/*
 - jee.parquet 
-- jee_pairs.parquet 
+- jee_pairs.parquet
 
-*results*
-
-**cmcqrd**
-
-*data*
+*cmcqrd/*
 - cmcqrd.parquet 
-- cmcqrd_pairs.parquet 
+- cmcqrd_pairs.parquet
+  
+*omni/**
+- omni.parquet (the subset of algebra questions from Omni-Math (cleaned) that do not contain any proofs, estimations or images)
+- omni_pairs.parquet
 
-*results*
+  
+**results/**
+
+*cmcqrd/*
 - cmcqrd_with_bt.parquet
 - cmcqrd_with_labels.parquet
 - all_bt_with_difficulty_cmcqrd_oss.parquet
 
 
-**omni** 
-
-*data*
-- omni.parquet (the subset of algebra questions from Omni-Math (cleaned) that do not contain any proofs, estimations or images)
-- omni_pairs.parquet
-
-*results*
+*omni/* 
 - omni_with_bt.parquet
 - omni_with_labels
 - omni_with_performance.parquet
 - all_bt_with_difficulty_omni_oss.parquet
 - omni_subsample_o3_correlations.parquet
 - omni_subsample_gemini_correlations.parquet
+
+- omni_o3_noise_alpha_0.01.parquet
+- omni_o3_noise_alpha_0.02.parquet
+- omni_o3_noise_alpha_0.05.parquet
+- omni_o3_noise_alpha_0.1.parquet
 
 - omni_gemini_noise_alpha_0.01.parquet
 - omni_gemini_noise_alpha_0.02.parquet
@@ -67,7 +69,7 @@ Download the datafiles at the links provided above and insert them into the corr
 
 ## Overview of the code
 
-**experiments**
+**experiments/**
 - 01_cmcqrd_create_pairs.py
 - 01_jee_create_pairs.py
 - 01_omni_create_pairs.py
@@ -94,7 +96,7 @@ Download the datafiles at the links provided above and insert them into the corr
 
 - 08_omni_subsample.py
 
-  **src**
+  **src/**
   - figures_main.ipynb
   - figures_appendix.ipynb
     
