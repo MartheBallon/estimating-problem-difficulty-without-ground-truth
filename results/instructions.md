@@ -1,1 +1,1 @@
-Insert the datafiles into three folders jee, cmcqrd, omni as described in the ReadME file. The data is publicly available at 10.5281/zenodo.17523641.
+Insert the necessary data folders/files here. You can find more details in the README.
