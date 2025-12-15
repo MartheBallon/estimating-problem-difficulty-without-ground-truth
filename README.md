@@ -64,7 +64,7 @@ results/
 
 
 ## Instructions for the data
-Download the datafiles at the links provided above and insert them into the data/results folder indicated above. Then, execute the code in the experiments/ folder depending on the task you want to replicate and insert the output in the correct folder.
+Download the datafiles at the links provided above and insert them into the data/results folder indicated above. Then, execute the code in the experiments folder depending on the task you want to replicate and insert the output in the correct folder.
 
 
 ## Overview of the code
