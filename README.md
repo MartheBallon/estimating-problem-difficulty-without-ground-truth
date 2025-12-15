@@ -18,7 +18,7 @@ python experiments/01_cmcqrd_create_pairs.py
    - The Cambridge MCQ Reading Dataset by Mullooly et al. 2023 (https://englishlanguageitutoring.com/datasets/cambridge-multiple-choice-questions-reading-dataset)
    - Omni-Math by Gao et al. 2024 (https://huggingface.co/datasets/KbsdJames/Omni-MATH)
   
-2. The cleaned Omni-Math dataset is available at (...)
+2. The cleaned Omni-Math Algebra dataset is available at (...)
   
 3. All data necessary to replicate the experiments is available at (10.5281/zenodo.17523641)
 
@@ -35,6 +35,10 @@ data/
 &nbsp;&nbsp;&nbsp;&nbsp;omni/
    - omni.parquet (the subset of algebra questions from Omni-Math (cleaned) that do not contain any proofs, estimations or images)
    - omni_pairs.parquet
+
+&nbsp;&nbsp;&nbsp;&nbsp;omni_non_linear/
+- omni_tier1_tier4_sample.parquet
+- omni_non_linear_pairs.parquet
 
   
 results/
@@ -62,8 +66,6 @@ results/
    - omni_with_labels
    - omni_with_performance.parquet
    - all_bt_with_difficulty_omni_oss.parquet
-   - omni_subsample_o3_correlations.parquet
-   - omni_subsample_gemini_correlations.parquet
    - omni_o3_noise_alpha_0.01.parquet
    - omni_o3_noise_alpha_0.02.parquet
    - omni_o3_noise_alpha_0.05.parquet
@@ -72,6 +74,12 @@ results/
    - omni_gemini_noise_alpha_0.02.parquet
    - omni_gemini_noise_alpha_0.05.parquet
    - omni_gemini_noise_alpha_0.1.parquet
+
+&nbsp;&nbsp;&nbsp;&nbsp;omni_non_linear/
+- omni_non_linear_pairs_o3_results.jsonl
+- omni_non_linear_pairs_gemini_results.jsonl
+- omni_non_linear_pairs_results.parquet
+- omni_non_linear_with_bt.parquet
 
 ## Instructions for the data
 Download the datafiles at the links provided above and insert them into the data/results folder indicated above. 
@@ -97,7 +105,7 @@ experiments/
 - 06_omni_label_by_llm.py
 - 07_omni_add_noise_gemini.py
 - 07_omni_add_noise_o3.py
-- 08_omni_subsample.py
+- 08_select_tiers.py
 
 src/
 - figures_main.ipynb
