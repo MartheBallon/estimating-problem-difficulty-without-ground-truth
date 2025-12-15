@@ -18,7 +18,7 @@ python experiments/01_cmcqrd_create_pairs.py
    - The Cambridge MCQ Reading Dataset by Mullooly et al. 2023 (https://englishlanguageitutoring.com/datasets/cambridge-multiple-choice-questions-reading-dataset)
    - Omni-Math by Gao et al. 2024 (https://huggingface.co/datasets/KbsdJames/Omni-MATH)
   
-2. The cleaned Omni-Math Algebra dataset is available at (...)
+2. The cleaned Omni-Math Algebra dataset is available at (coming soon)
   
 3. All data necessary to replicate the experiments is available at (10.5281/zenodo.17523641)
 
