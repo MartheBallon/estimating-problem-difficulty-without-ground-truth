@@ -24,19 +24,12 @@ data/
 
 &nbsp;&nbsp;&nbsp;&nbsp;jee/
 - jee.parquet
-- jee_pairs.parquet
 
 &nbsp;&nbsp;&nbsp;&nbsp;cmcqrd/
 - cmcqrd.parquet 
-- cmcqrd_pairs.parquet
   
 &nbsp;&nbsp;&nbsp;&nbsp;omni/
    - omni.parquet (the subset of algebra questions from Omni-Math (cleaned) that do not contain any proofs, estimations or images)
-   - omni_pairs.parquet
-
-&nbsp;&nbsp;&nbsp;&nbsp;omni_non_linear/
-- omni_tier1_tier4_sample.parquet
-- omni_non_linear_pairs.parquet
 
   
 results/
@@ -44,43 +37,34 @@ results/
 &nbsp;&nbsp;&nbsp;&nbsp;jee/
    - jee_pairs_o3_results.jsonl
    - jee_pairs_gemini_results.jsonl
-   - jee_pairs_results.parquet
-   - jee_with_bt.parquet
 
 &nbsp;&nbsp;&nbsp;&nbsp;cmcqrd/
    - cmcqrd_pairs_o3_results.jsonl
    - cmcqrd_pairs_gemini_results.jsonl
-   - cmcqrd_pairs_resuls.parquet
-   - cmcqrd_with_bt.parquet
-   - cmcqrd_with_labels.parquet
+   - cmcqrd_o3_label_results.jsonl
+   - cmcqrd_gemini_label_results.jsonl
    - all_bt_with_difficulty_cmcqrd_oss.parquet
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;omni/
    - omni_pairs_o3_results.jsonl
    - omni_pairs_gemini_results.jsonl
-   - omni_pairs_results.parquet
-   - omni_with_bt.parquet
-   - omni_with_labels
-   - omni_with_performance.parquet
+   - omni_o3_label_results.jsonl
+   - omni_gemini_label_results.jsonl
+   - omni_o3_benchmark_results.jsonl
+   - omni_o3_benchmark_judged.jsonl
+   - omni_gemini_benchmark_results.jsonl
+   - omni_gemini_benchmark_judged.jsonl
    - all_bt_with_difficulty_omni_oss.parquet
-   - omni_o3_noise_alpha_0.01.parquet
-   - omni_o3_noise_alpha_0.02.parquet
-   - omni_o3_noise_alpha_0.05.parquet
-   - omni_o3_noise_alpha_0.1.parquet
-   - omni_gemini_noise_alpha_0.01.parquet
-   - omni_gemini_noise_alpha_0.02.parquet
-   - omni_gemini_noise_alpha_0.05.parquet
-   - omni_gemini_noise_alpha_0.1.parquet
+
 
 &nbsp;&nbsp;&nbsp;&nbsp;omni_non_linear/
 - omni_non_linear_pairs_o3_results.jsonl
 - omni_non_linear_pairs_gemini_results.jsonl
-- omni_non_linear_pairs_results.parquet
-- omni_non_linear_with_bt.parquet
+
 
 ## Instructions for the data
-Download the datafiles at the links provided above and insert them into the data/results folder indicated above. 
+Download the datafiles at the links provided above and insert them into the data/results folder indicated above. Then, execute the code in the experiments/ folder depending on the task you want to replicate and insert the output in the correct folder.
 
 
 ## Overview of the code
@@ -115,7 +99,7 @@ src/
 
 
 ## Instructions for the code
-A detailed description on how to create the figures is provided in figures_main.ipynb and figures_appendix.ipynb. The python scripts 01-04 in experiments/ compute BT scores with OpenAI o3 and Gemini 2.5 Pro, for all three datasets. The scripts 05-08 create additional data to support the figures.
+A detailed description on how to create the figures is provided in figures_main.ipynb and figures_appendix.ipynb. The python scripts 01-04 in experiments/ compute BT scores with OpenAI o3 and Gemini 2.5 Pro, for all three datasets. The scripts 05-08 create additional data to support the figures. 
 
 
 
