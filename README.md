@@ -1,5 +1,5 @@
-# It's not that hard! Inferring problem difficulty with Large Language Models
-This repository contains the code to 'It's not that hard! Inferring problem difficulty with Large Language Models' by Marthe Ballon, Andres Algaba, Brecht Verbeken and Vincent Ginis (arXiv link). 
+# Estimating problem difficulty without ground truth using Large Language Model comparisons
+This repository contains the code to 'Estimating problem difficulty without ground truth using Large Language Model comparisons' by Marthe Ballon, Andres Algaba, Brecht Verbeken and Vincent Ginis (arXiv link). 
 
 ## System requirements
 ```bash
