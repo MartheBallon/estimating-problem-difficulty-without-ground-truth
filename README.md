@@ -1,5 +1,5 @@
 # Estimating problem difficulty without ground truth using Large Language Model comparisons
-This repository contains the code to 'Estimating problem difficulty without ground truth using Large Language Model comparisons' by Marthe Ballon, Andres Algaba, Brecht Verbeken and Vincent Ginis (arXiv link). 
+This repository contains the code to 'Estimating problem difficulty without ground truth using Large Language Model comparisons' by Marthe Ballon, Andres Algaba, Brecht Verbeken and Vincent Ginis (https://arxiv.org/pdf/2512.14220). 
 
 ## System requirements
 ```bash
