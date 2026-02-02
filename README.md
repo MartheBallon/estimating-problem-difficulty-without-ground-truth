@@ -14,9 +14,11 @@ python experiments/01_cmcqrd_create_pairs.py
 
 ## Overview of the data
 1. The original three datasets used in the paper are available at
-   - JEE Advanced Maths 2024 (https://jeeadv.ac.in/archive.html) 
+   - JEE Advanced Maths 2024 by the Joint Implementation Committee 2024 (https://jeeadv.ac.in/archive.html) 
    - The Cambridge MCQ Reading Dataset by Mullooly et al. 2023 (https://englishlanguageitutoring.com/datasets/cambridge-multiple-choice-questions-reading-dataset)
    - Omni-Math by Gao et al. 2024 (https://huggingface.co/datasets/KbsdJames/Omni-MATH)
+  
+2. Omni-MATH-2 is available at (https://huggingface.co/datasets/martheballon/Omni-MATH-2) 
     
 2. All data necessary to replicate the experiments is available at (10.5281/zenodo.17523641)
 
@@ -29,7 +31,7 @@ data/
 - cmcqrd.parquet 
   
 &nbsp;&nbsp;&nbsp;&nbsp;omni/
-   - omni.parquet (the subset of algebra questions from Omni-Math (cleaned) that do not contain any proofs, estimations or images)
+   - omni.parquet (the subset of algebra questions from Omni-Math-2 that do not contain any proofs, estimations or images)
 
   
 results/
@@ -87,7 +89,7 @@ experiments/
 - 06_omni_label_by_llm.py
 - 07_omni_add_noise_gemini.py
 - 07_omni_add_noise_o3.py
-- 08_select_tiers.py
+- 08_select_tiers.py --> This file creates a new subset that only contains Tier 1 and Tier 4 problems of Omni-MATH-2, execute experiments 01-04 again for this set
 
 src/
 - figures_main.ipynb
