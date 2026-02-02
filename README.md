@@ -20,7 +20,7 @@ python experiments/01_cmcqrd_create_pairs.py
   
 2. Omni-MATH-2 is available at (https://huggingface.co/datasets/martheballon/Omni-MATH-2) 
     
-2. All data necessary to replicate the experiments is available at (10.5281/zenodo.17523641)
+2. All data necessary to replicate the experiments is available at (https://zenodo.org/records/17523641)
 
 data/
 
